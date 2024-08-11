@@ -169,5 +169,5 @@ window.addEventListener('load' , siteLoaded)
 function siteLoaded() {
     loading.style.opacity = '0'
     cover.style.opacity = '0'
-    
+    cover.style.display = 'none'
 }
