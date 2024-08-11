@@ -95,6 +95,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     padding: 0px;
+    position: relative;
 }
 
 /* Header part */
@@ -1556,11 +1557,13 @@ footer {
     color: #2952CE;
 }
 
+/* loading part */
+
 .cover {
     width: 100%;
-    height: 100vh;
+    height: 7785px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: absolute;
     transition: all ease 250ms 30ms;
@@ -1570,6 +1573,7 @@ footer {
     -o-transition: all ease 250ms 30ms;
     background-color: rgb(246, 253, 255);
     z-index: 10;
+    top: 0px;
 }
 
 .loading {
@@ -1583,6 +1587,7 @@ footer {
     -moz-transition: all ease 250ms 30ms;
     -ms-transition: all ease 250ms 30ms;
     -o-transition: all ease 250ms 30ms;
+    margin-top: 450px;
 }
 
 .circle {
