@@ -390,6 +390,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 /* first section */
@@ -1269,7 +1270,50 @@ main {
     stroke: #2952CE;
 }
 
-/* ninth section */
+.main-circle{
+    position: absolute;
+    background-color: #45CDF7;
+    opacity: 12%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    filter:blur(100px);
+    -webkit-filter:blur(100px);
+    z-index: -1;
+    opacity: 8%;
+}
+
+.main-circle-design1-1 {
+    left: -139px;
+    top: 224px;
+    width: 517px;
+    height: 517px;
+}
+
+.main-circle-design1-2 {
+    width: 587px;
+    height: 587px;
+    left: 996px;
+    top: 365px;
+}
+
+.main-circle-design2-1 {
+    width: 517px;
+    height: 517px;
+    left: -139px;
+    top: 2470px;
+}
+
+.main-circle-design2-2 {
+    width: 587px;
+    height: 587px;
+    left: 996px;
+    top: 2270px;
+}
+
+/* Footer section */
 
 footer {
     padding: 60px 120px;
@@ -1510,4 +1554,68 @@ footer {
 
 .quick-access-item a:hover {
     color: #2952CE;
+}
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: all ease 250ms 30ms;
+    -webkit-transition: all ease 250ms 30ms;
+    -moz-transition: all ease 250ms 30ms;
+    -ms-transition: all ease 250ms 30ms;
+    -o-transition: all ease 250ms 30ms;
+    background-color: rgb(235, 238, 238);
+    z-index: 10;
+}
+
+.loading {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    transition: all ease 250ms 30ms;
+    -webkit-transition: all ease 250ms 30ms;
+    -moz-transition: all ease 250ms 30ms;
+    -ms-transition: all ease 250ms 30ms;
+    -o-transition: all ease 250ms 30ms;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #3366FF;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.circle-1 {
+    animation: loading-circles 1.2s ease infinite 0s;
+    -webkit-animation: loading-circles 1.2s ease infinite 0s;
+}
+.circle-2 {
+    animation: loading-circles 1.2s ease infinite 0.2s;
+    -webkit-animation: loading-circles 1.2s ease infinite 0.2s;
+}
+.circle-3 {
+    animation: loading-circles 1.2s ease infinite 0.4s;
+    -webkit-animation: loading-circles 1.2s ease infinite 0.4s;
+}
+
+@keyframes loading-circles {
+    
+    50% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
 }

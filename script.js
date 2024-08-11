@@ -160,3 +160,13 @@ function nextDentist() {
 
     }
 }
+
+let loading = doc.querySelector('.loading')
+let cover = doc.querySelector('.cover')
+
+window.addEventListener('load' , siteLoaded)
+
+function siteLoaded() {
+    loading.style.opacity = '0'
+    cover.style.opacity = '0'
+}
